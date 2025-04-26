@@ -10,13 +10,11 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
-//client
+
 public class Client {
     private static boolean isInGame = false;
     private static boolean scoreShown = false;
-
-
-private static PrintWriter out;
+    private static PrintWriter out;
     private static String playerName;
     private static JFrame frame;
     private static DefaultListModel<String> playerListModel = new DefaultListModel<>();
@@ -24,7 +22,6 @@ private static PrintWriter out;
     private static JList<String> playerList;
     private static JList<String> waitingList;
     private static JButton playButton;
-    //private static JButton startGameButton;
     private static JButton connectButton;
     private static JLabel timerLabel;
     private static JPanel gamePlayersLabel;
@@ -133,7 +130,6 @@ private static PrintWriter out;
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setBackground(new Color(173, 216, 230));
-        // ❌ (Removed Start Game Button here)
 
         JPanel topPanel = new JPanel(new BorderLayout());
         topPanel.setBackground(new Color(173, 216, 230));
